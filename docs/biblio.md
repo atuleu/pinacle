@@ -9,6 +9,7 @@ READ :
 TO READ :
 
 * http://www.st.com/web/en/resource/technical/document/application_note/CD00003820.pdf
+* http://www.jameco.com/jameco/products/prodds/811760.pdf
 
 Exisiting Open Source circuit :
 
