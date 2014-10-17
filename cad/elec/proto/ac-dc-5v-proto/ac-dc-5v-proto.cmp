@@ -1,0 +1,45 @@
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Fri 17 Oct 2014 12:33:39 PM CEST
+
+BeginCmp
+TimeStamp = /5440EB50;
+Reference = C1;
+ValeurCmp = 330uF;
+IdModule  = Capacitors_ThroughHole:Capacitor10x13RM5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5440E7DD;
+Reference = F1;
+ValeurCmp = 1A, SLOW BLOW;
+IdModule  = Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_SemiClosed_Casing10x25mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5440E652;
+Reference = P1;
+ValeurCmp = AC_IN;
+IdModule  = Connect:bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5440E67B;
+Reference = P2;
+ValeurCmp = 5V_OUT;
+IdModule  = Connect:bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5440E501;
+Reference = U1;
+ValeurCmp = RAC02-05SC;
+IdModule  = Recom:RAC0X-C;
+EndCmp
+
+BeginCmp
+TimeStamp = /5440E7A0;
+Reference = VR1;
+ValeurCmp = MOV, 230 VAC;
+IdModule  = Discret:R3;
+EndCmp
+
+EndListe
