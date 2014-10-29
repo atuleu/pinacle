@@ -1,0 +1,202 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:dimmer-proto-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MOC3021M IC1
+U 1 1 5440FA2A
+P 3550 3850
+F 0 "IC1" H 3340 4040 40  0000 C CNN
+F 1 "MOC3021M" H 3650 3660 40  0000 C CNN
+F 2 "DIP6" H 3350 3670 30  0000 C CIN
+F 3 "" H 3550 3850 60  0000 C CNN
+	1    3550 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TRIAC U1
+U 1 1 5440FA67
+P 5700 4150
+F 0 "U1" H 5450 4500 70  0000 C CNN
+F 1 "TRIAC" H 5400 3900 60  0000 C CNN
+F 2 "" H 5700 4150 60  0000 C CNN
+F 3 "" H 5700 4150 60  0000 C CNN
+	1    5700 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 5440FAE8
+P 8500 3550
+F 0 "P3" H 8500 3700 50  0000 C CNN
+F 1 "AC_IN" V 8600 3550 50  0000 C CNN
+F 2 "" H 8500 3550 60  0000 C CNN
+F 3 "" H 8500 3550 60  0000 C CNN
+	1    8500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 5440FB39
+P 2000 3800
+F 0 "P1" H 2000 3950 50  0000 C CNN
+F 1 "CTL" V 2100 3800 50  0000 C CNN
+F 2 "" H 2000 3800 60  0000 C CNN
+F 3 "" H 2000 3800 60  0000 C CNN
+	1    2000 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 5440FC38
+P 2750 3750
+F 0 "R1" V 2830 3750 40  0000 C CNN
+F 1 "470" V 2757 3751 40  0000 C CNN
+F 2 "" V 2680 3750 30  0000 C CNN
+F 3 "" H 2750 3750 30  0000 C CNN
+	1    2750 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L R 1k
+U 1 1 5440FCB1
+P 4400 3750
+F 0 "1k" V 4480 3750 40  0000 C CNN
+F 1 "R" V 4407 3751 40  0000 C CNN
+F 2 "" V 4330 3750 30  0000 C CNN
+F 3 "" H 4400 3750 30  0000 C CNN
+	1    4400 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 5441005B
+P 8050 2600
+F 0 "P2" H 8050 2750 50  0000 C CNN
+F 1 "LOAD" V 8150 2600 50  0000 C CNN
+F 2 "" H 8050 2600 60  0000 C CNN
+F 3 "" H 8050 2600 60  0000 C CNN
+	1    8050 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 3750 2500 3750
+Wire Wire Line
+	3000 3750 3200 3750
+Wire Wire Line
+	2200 3850 2200 3950
+Wire Wire Line
+	2200 3950 3200 3950
+Wire Wire Line
+	4150 3750 3900 3750
+Wire Wire Line
+	3900 3950 5200 3950
+Wire Wire Line
+	5200 3950 5200 4350
+$Comp
+L FUSE F1
+U 1 1 54410385
+P 7650 4600
+F 0 "F1" H 7750 4650 40  0000 C CNN
+F 1 "5A SLOW BLOW" H 7650 4450 40  0000 C CNN
+F 2 "" H 7650 4600 60  0000 C CNN
+F 3 "" H 7650 4600 60  0000 C CNN
+	1    7650 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 4600 8300 4600
+Wire Wire Line
+	8300 4600 8300 3600
+Text Label 8300 4450 0    60   ~ 0
+AC_N
+Wire Wire Line
+	8100 2800 8300 2800
+Wire Wire Line
+	8300 2800 8300 3500
+Text Label 8300 3000 0    60   ~ 0
+AC_L
+$Comp
+L C C1
+U 1 1 544104BE
+P 7250 3650
+F 0 "C1" H 7250 3750 40  0000 L CNN
+F 1 "150 nF, 600V" H 7256 3565 40  0000 L CNN
+F 2 "" H 7288 3500 30  0000 C CNN
+F 3 "" H 7250 3650 60  0000 C CNN
+	1    7250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 544105D0
+P 6800 4600
+F 0 "L1" V 6750 4600 40  0000 C CNN
+F 1 "40-100 uH, 5A" V 6900 4600 40  0000 C CNN
+F 2 "" H 6800 4600 60  0000 C CNN
+F 3 "" H 6800 4600 60  0000 C CNN
+	1    6800 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 2800 8000 2800
+Wire Wire Line
+	5700 2800 5700 3750
+Wire Wire Line
+	4650 3750 4650 2800
+Connection ~ 5700 2800
+Wire Wire Line
+	5700 4400 5700 4600
+Wire Wire Line
+	5700 4600 6500 4600
+Wire Wire Line
+	7250 3850 7250 4600
+Wire Wire Line
+	7100 4600 7400 4600
+Connection ~ 7250 4600
+Wire Wire Line
+	7250 3450 7250 2800
+Connection ~ 7250 2800
+$EndSCHEMATC
