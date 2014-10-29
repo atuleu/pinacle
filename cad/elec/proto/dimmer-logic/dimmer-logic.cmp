@@ -1,0 +1,297 @@
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Wed 29 Oct 2014 06:59:27 PM CET
+
+BeginCmp
+TimeStamp = /5450D7F2/54512D2E;
+Reference = C1;
+ValeurCmp = 1500uF, 25V;
+IdModule  = Capacitors_ThroughHole:Capacitor13x25RM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D7F2/5451315A;
+Reference = C2;
+ValeurCmp = 330nF;
+IdModule  = Capacitors_ThroughHole:Capacitor3MMDiscRM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D7F2/545125E1;
+Reference = C3;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_ThroughHole:Capacitor3MMDiscRM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/54513699;
+Reference = C4;
+ValeurCmp = 20pF;
+IdModule  = Capacitors_ThroughHole:Capacitor3MMDiscRM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/5451375A;
+Reference = C5;
+ValeurCmp = 20pF;
+IdModule  = Capacitors_ThroughHole:Capacitor3MMDiscRM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/5451ADA2;
+Reference = C6;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_ThroughHole:Capacitor3MMDiscRM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/5451A951;
+Reference = C7;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_ThroughHole:Capacitor3MMDiscRM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/54512791;
+Reference = C8;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_ThroughHole:Capacitor3MMDiscRM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/545127FE;
+Reference = C9;
+ValeurCmp = 10uF tant.;
+IdModule  = Capacitors_ThroughHole:Capacitor3MMDiscRM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/545172E5/545125B4;
+Reference = C10;
+ValeurCmp = 1uF;
+IdModule  = Capacitors_ThroughHole:Capacitor3MMDiscRM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/545172E5/54512633;
+Reference = C11;
+ValeurCmp = 22uF, 6.3V;
+IdModule  = Capacitors_ThroughHole:Capacitor3MMDiscRM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D7F2/54513365;
+Reference = D1;
+ValeurCmp = 1N5062;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D7F2/5451342C;
+Reference = D2;
+ValeurCmp = 1N5062;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D7F2/54513453;
+Reference = D3;
+ValeurCmp = 1N5062;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D7F2/54513489;
+Reference = D4;
+ValeurCmp = 1N5062;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/54516B69;
+Reference = D5;
+ValeurCmp = DIODESCH;
+IdModule  = Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/54516CFB;
+Reference = D6;
+ValeurCmp = DIODESCH;
+IdModule  = Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/5451707A;
+Reference = FB1;
+ValeurCmp = FILTER;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D59D;
+Reference = P1;
+ValeurCmp = AC_IN;
+IdModule  = Connect:bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D66A;
+Reference = P2;
+ValeurCmp = DC_OUT;
+IdModule  = Connect:bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D6C3;
+Reference = P3;
+ValeurCmp = LOGIC_OUT;
+IdModule  = Connect:SIL-4;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/5451584C;
+Reference = P4;
+ValeurCmp = I2C_BUS;
+IdModule  = Connect:SIL-4;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/54515B25;
+Reference = P5;
+ValeurCmp = dsPIC_PGM;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x06;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D7F2/54512247;
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D7F2/545122AF;
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D7F2/545121DD;
+Reference = R3;
+ValeurCmp = 10k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D7F2/54512210;
+Reference = R4;
+ValeurCmp = 10k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/545166B1;
+Reference = R5;
+ValeurCmp = 10k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/545197C7;
+Reference = R6;
+ValeurCmp = 10k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/54519A4F;
+Reference = R7;
+ValeurCmp = 10k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/5451A0FE;
+Reference = R8;
+ValeurCmp = 10k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/54519AA2;
+Reference = R9;
+ValeurCmp = 10k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/5451957C;
+Reference = R10;
+ValeurCmp = 10k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D7F2/54511807;
+Reference = T1;
+ValeurCmp = 230V - 9V 10-15VA;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D7F2/545118DB;
+Reference = U1;
+ValeurCmp = 7805;
+IdModule  = Transistors_TO-220:TO-220_Neutral123_PadsOnly;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450D7F2/54511CB0;
+Reference = U2;
+ValeurCmp = LTC6253;
+IdModule  = Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/545190BF;
+Reference = U3;
+ValeurCmp = TCA9406;
+IdModule  = Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/545152E7;
+Reference = U4;
+ValeurCmp = dsPIC33FJ06GS101A;
+IdModule  = Housings_SOIC:SOIC-18_7.5x11.6mm_Pitch1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/545179F9;
+Reference = U5;
+ValeurCmp = 74LS08;
+IdModule  = Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/54517CBC;
+Reference = U6;
+ValeurCmp = 74LS32;
+IdModule  = Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/545172E5/54512536;
+Reference = U7;
+ValeurCmp = MIC52393.3-YS;
+IdModule  = SMD_Packages:SOT-223;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450FA39/54513443;
+Reference = X1;
+ValeurCmp = 10 MHz;
+IdModule  = Crystals:Crystal_HC48-U_Vertical;
+EndCmp
+
+EndListe
