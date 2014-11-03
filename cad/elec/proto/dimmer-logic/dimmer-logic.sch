@@ -29,16 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:analogSpice
-LIBS:analogXSpice
-LIBS:convergenceAidSpice
-LIBS:converterSpice
-LIBS:digitalSpice
-LIBS:digitalXSpice
-LIBS:linearSpice
-LIBS:measurementSpice
-LIBS:portSpice
-LIBS:sourcesSpice
 LIBS:lt
 LIBS:dspic33fj
 LIBS:tca9406
@@ -72,21 +62,21 @@ $EndComp
 $Comp
 L CONN_01X02 P2
 U 1 1 5450D66A
-P 8100 3200
-F 0 "P2" H 8100 3350 50  0000 C CNN
-F 1 "DC_OUT" V 8200 3200 50  0000 C CNN
-F 2 "Connect:bornier2" H 8100 3200 60  0001 C CNN
-F 3 "" H 8100 3200 60  0000 C CNN
-	1    8100 3200
+P 8100 2900
+F 0 "P2" H 8100 3050 50  0000 C CNN
+F 1 "DC_OUT" V 8200 2900 50  0000 C CNN
+F 2 "Connect:bornier2" H 8100 2900 60  0001 C CNN
+F 3 "" H 8100 2900 60  0000 C CNN
+	1    8100 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X04 P3
+L CONN_01X06 P3
 U 1 1 5450D6C3
 P 8100 3800
 F 0 "P3" H 8100 4050 50  0000 C CNN
 F 1 "LOGIC_OUT" V 8200 3800 50  0000 C CNN
-F 2 "Connect:SIL-4" H 8100 3800 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x06" H 8100 3800 60  0001 C CNN
 F 3 "" H 8100 3800 60  0000 C CNN
 	1    8100 3800
 	1    0    0    -1  
@@ -98,10 +88,10 @@ F0 "ac_dc_supply" 60
 F1 "ac_dc_supply.sch" 60
 F2 "n_in" I L 3900 3850 60 
 F3 "l_in" I L 3900 3750 60 
-F4 "dc_out" O R 4850 3600 60 
-F5 "dc_gnd" O R 4850 3700 60 
-F6 "phase_+" O R 4850 3950 60 
-F7 "phase_-" O R 4850 4050 60 
+F4 "dc_gnd" O R 4850 3700 60 
+F5 "phase_+" O R 4850 3950 60 
+F6 "phase_-" O R 4850 4050 60 
+F7 "dc_out" O R 4850 3600 60 
 $EndSheet
 $Comp
 L +5V #PWR01
@@ -117,12 +107,12 @@ $EndComp
 $Comp
 L +5V #PWR02
 U 1 1 5450F84E
-P 7900 2950
-F 0 "#PWR02" H 7900 3040 20  0001 C CNN
-F 1 "+5V" H 7900 3040 30  0000 C CNN
-F 2 "" H 7900 2950 60  0000 C CNN
-F 3 "" H 7900 2950 60  0000 C CNN
-	1    7900 2950
+P 7900 2650
+F 0 "#PWR02" H 7900 2740 20  0001 C CNN
+F 1 "+5V" H 7900 2740 30  0000 C CNN
+F 2 "" H 7900 2650 60  0000 C CNN
+F 3 "" H 7900 2650 60  0000 C CNN
+	1    7900 2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -139,18 +129,18 @@ $EndComp
 $Comp
 L GND #PWR04
 U 1 1 5450F90A
-P 7900 3450
-F 0 "#PWR04" H 7900 3450 30  0001 C CNN
-F 1 "GND" H 7900 3380 30  0001 C CNN
-F 2 "" H 7900 3450 60  0000 C CNN
-F 3 "" H 7900 3450 60  0000 C CNN
-	1    7900 3450
+P 7900 3150
+F 0 "#PWR04" H 7900 3150 30  0001 C CNN
+F 1 "GND" H 7900 3080 30  0001 C CNN
+F 2 "" H 7900 3150 60  0000 C CNN
+F 3 "" H 7900 3150 60  0000 C CNN
+	1    7900 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7900 3450 7900 3250
-Wire Wire Line
 	7900 3150 7900 2950
+Wire Wire Line
+	7900 2850 7900 2650
 Wire Wire Line
 	5450 3300 5450 3600
 Wire Wire Line
@@ -159,32 +149,30 @@ Wire Wire Line
 	5450 3800 5450 3700
 Wire Wire Line
 	4850 3700 6100 3700
+Wire Wire Line
+	4850 3950 6100 3950
+Wire Wire Line
+	4850 4050 6100 4050
+Connection ~ 5450 3600
+Connection ~ 5450 3700
+Wire Wire Line
+	3700 3750 3900 3750
+Wire Wire Line
+	3700 3850 3900 3850
 $Sheet
 S 6100 3450 1250 800 
 U 5450FA39
 F0 "dsPIC" 60
 F1 "dsPIC.sch" 60
-F2 "dc_in" I L 6100 3600 60 
-F3 "dc_gnd" I L 6100 3700 60 
-F4 "ac_phase_+" I L 6100 3950 60 
-F5 "ac_phase-" I L 6100 4050 60 
-F6 "nh" O R 7350 3600 60 
-F7 "nl" O R 7350 3700 60 
-F8 "lh" O R 7350 3900 60 
-F9 "ll" O R 7350 4000 60 
+F2 "nh" O R 7350 3900 60 
+F3 "nl" O R 7350 4000 60 
+F4 "lh" O R 7350 3700 60 
+F5 "ll" O R 7350 3600 60 
+F6 "dc_in" I L 6100 3600 60 
+F7 "dc_gnd" I L 6100 3700 60 
+F8 "ac_phase_+" I L 6100 3950 60 
+F9 "ac_phase_-" I L 6100 4050 60 
 $EndSheet
-Wire Wire Line
-	7350 3600 7700 3600
-Wire Wire Line
-	7700 3600 7700 3650
-Wire Wire Line
-	7700 3650 7900 3650
-Wire Wire Line
-	7350 3700 7650 3700
-Wire Wire Line
-	7650 3700 7650 3750
-Wire Wire Line
-	7650 3750 7900 3750
 Wire Wire Line
 	7350 3900 7650 3900
 Wire Wire Line
@@ -198,13 +186,45 @@ Wire Wire Line
 Wire Wire Line
 	7700 3950 7900 3950
 Wire Wire Line
-	4850 3950 6100 3950
+	7350 3700 7650 3700
 Wire Wire Line
-	4850 4050 6100 4050
-Connection ~ 5450 3600
-Connection ~ 5450 3700
+	7650 3700 7650 3750
 Wire Wire Line
-	3700 3750 3900 3750
+	7650 3750 7900 3750
 Wire Wire Line
-	3700 3850 3900 3850
+	7350 3600 7700 3600
+Wire Wire Line
+	7700 3600 7700 3650
+Wire Wire Line
+	7700 3650 7900 3650
+$Comp
+L +3.3V #PWR05
+U 1 1 545756D8
+P 7800 3400
+F 0 "#PWR05" H 7800 3360 30  0001 C CNN
+F 1 "+3.3V" H 7800 3510 30  0000 C CNN
+F 2 "" H 7800 3400 60  0000 C CNN
+F 3 "" H 7800 3400 60  0000 C CNN
+	1    7800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 545756ED
+P 7800 4200
+F 0 "#PWR06" H 7800 4200 30  0001 C CNN
+F 1 "GND" H 7800 4130 30  0001 C CNN
+F 2 "" H 7800 4200 60  0000 C CNN
+F 3 "" H 7800 4200 60  0000 C CNN
+	1    7800 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4200 7800 4050
+Wire Wire Line
+	7800 4050 7900 4050
+Wire Wire Line
+	7800 3400 7800 3550
+Wire Wire Line
+	7800 3550 7900 3550
 $EndSCHEMATC
